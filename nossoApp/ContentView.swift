@@ -14,7 +14,7 @@ struct Integrantes: Identifiable {
 }
 
 let integrantes = [
-  Integrantes(name: " 🐲  Rafa "),
+  Integrantes(name: " 🐲  Rafa"),
   Integrantes(name: " 💚  Thigo "),
   Integrantes(name: " 🌟  Clara "),
   Integrantes(name: "🧙‍♂️   Dan "),
