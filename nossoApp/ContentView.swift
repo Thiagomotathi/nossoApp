@@ -13,11 +13,11 @@ struct Integrantes: Identifiable {
 }
 
 let integrantes = [
-  Integrantes(name: "  Rafa"),
-  Integrantes(name: "  Thigo "),
-  Integrantes(name: "  Clara "),
-  Integrantes(name: "‍  Dan "),
-  Integrantes(name: "  Todes! ")
+  Integrantes(name: " 💙 Rafa"),
+  Integrantes(name: " 💛 Thigo "),
+  Integrantes(name: " 💜 Clara "),
+  Integrantes(name: "‍ 🩵 Dan "),
+  Integrantes(name: "  Todes! ")
 ]
 
 struct ContentView: View {
@@ -31,11 +31,11 @@ struct ContentView: View {
           Picker("Integrante favorito", selection: $selectedIntegrante) {
             ForEach(integrantes) { integrante in
               Text(integrante.name)
-                .tag(integrante.name) // Set tag for selection
+                .tag(integrante.name)
             }
           }
           .pickerStyle(WheelPickerStyle())
-          Text("Você selecionou: \(selectedIntegrante)") // Display selected integrante
+          Text("Você selecionou: \(selectedIntegrante)")
         }
         .navigationTitle("Integrantes")
       }
@@ -57,6 +57,7 @@ struct ContentView: View {
     }
   }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
